@@ -47,18 +47,19 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Large model files and datasets
-*.pt
-*.pth
+# Large model files and datasets (exclude untrained models, keep trained ones)
 *.onnx
 *.h5
 *.pkl
 *.joblib
+# Keep trained models in netball_analysis/models/ but exclude others
+!netball_analysis/models/*.pt
+!netball_analysis/models/*.pth
 
 # Dataset files
 datasets/
 netball_analysis/datasets/
-netball_analysis/models/
+# Note: netball_analysis/models/ is excluded above but *.pt files are included
 netball_analysis/output/
 netball_analysis/logs/
 netball_analysis/jobs/
