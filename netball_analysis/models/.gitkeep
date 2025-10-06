@@ -1,0 +1,10 @@
+# This file ensures the models directory is tracked by git
+# Trained model weights will be saved here:
+# - players_best.pt
+# - ball_best.pt  
+# - hoop_best.pt
+
+
+
+
+
